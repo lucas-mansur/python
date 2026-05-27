@@ -17,12 +17,27 @@ Se o valor de vendas for maior ou igual a meta, o valor do bônus do funcionári
 Caso contrário o valor de bônus do funcionário é 0.<br>
 Print o bônus dos 3 funcionários
 """
-
+print("1. Cálculo de Bônus")
 vendas_funcionario1 = 1000
 vendas_funcionario2 = 770
 vendas_funcionario3 = 2700
-
+meta = 1000
 #crie seu código aqui
+
+if vendas_funcionario1 >= meta :
+    print("Funcionário 1 bateu a meta, o bônus é : R$",vendas_funcionario1*0.1)
+else:
+    print("Funcionário 1 não bateu a meta, o bônus é : R$",0)
+
+if vendas_funcionario2 >= meta :
+    print("Funcionário 2 bateu a meta, o bônus é : R$",vendas_funcionario2*0.1)
+else:
+    print("Funcionário 2 não bateu a meta, o bônus é : R$",0)
+
+if vendas_funcionario3 >= meta :
+    print("Funcionário 3 bateu a meta, o bônus é : R$",vendas_funcionario3*0.1)
+else:
+    print("Funcionário 3 não bateu a meta, o bônus é : R$",0)
 
 """Resposta:
 O funcionário 1 ganhou 100 de bônus
@@ -42,9 +57,29 @@ Agora, os funcionários que venderem muito acima da meta ganham mais bônus do q
 
 Use as mesmas variáveis de vendas_funcionários
 """
-
+print("2. Cálculo de bônus com uma nova regra")
 #crie seu código aqui
 #obs: há 2 formas de fazer, com if dentro de if ou então com if e elif. Escolha a que você preferir
+if vendas_funcionario1 >= meta*2:
+    print("O funcionário 1 ganhou",vendas_funcionario1*0.15,"de bônus")
+elif vendas_funcionario1 >= meta:
+    print("O funcionário 1 ganhou",vendas_funcionario1*0.1,"de bônus")
+else:
+    print("O funcionário 1 ganhou",0,"de bônus")
+
+if vendas_funcionario2 >= meta*2:
+    print("O funcionário 2 ganhou",vendas_funcionario2*0.15,"de bônus")
+elif vendas_funcionario2 >= meta:
+    print("O funcionário 2 ganhou",vendas_funcionario2*0.1,"de bônus")
+else:
+    print("O funcionário 2 ganhou",0,"de bônus")
+
+if vendas_funcionario3 >= meta*2:
+    print("O funcionário 3 ganhou",vendas_funcionario3*0.15,"de bônus")
+elif vendas_funcionario3 >= meta:
+    print("O funcionário 3 ganhou",vendas_funcionario3*0.1,"de bônus")
+else:
+    print("O funcionário 3 ganhou",0,"de bônus")
 
 """Resposta:
 O funcionário 1 ganhou 100 de bônus

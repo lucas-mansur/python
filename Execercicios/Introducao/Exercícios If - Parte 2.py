@@ -30,3 +30,17 @@ Obs2: Caso o usuário não preencha alguma das 3 informações, o programa deve 
 """
 
 #seu código aqui
+
+produto = input("Infome o nome do produto que deseja atualizar a quantidade disponível no estoque: ")
+categoria = input("Informe a categoria do produto (alimentos, bebidas, limpeza): ")
+unidades = int(input("Informe a quantidade atual do protudo no estoque: "))
+
+if categoria == "alimentos":
+    if unidades < 50:
+        print(f"Solicitar {produto} à equipe de compras, temos apenas {unidades} em estoque")
+if categoria == "bebidas":
+    if unidades < 75:
+        print(f"Solicitar {produto} à equipe de compras, temos apenas {unidades} em estoque")
+if categoria == "limpeza":
+    if unidades < 30:
+        print(f"Solicitar {produto} à equipe de compras, temos apenas {unidades} em estoque")
